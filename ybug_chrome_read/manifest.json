@@ -1,0 +1,16 @@
+{
+    "name": "Yahoo! Bugzilla Reader",
+	"version": "1.0",
+        "manifest_version": 2,
+	"description": "Yahoo! Bugzilla Reader",
+	"icons": {
+		"16": "icon.png",
+		"128": "icon.png"
+	},
+	"content_scripts": [{
+            "matches": ["http://bug.corp.yahoo.com/*"],
+            "run_at": "document_end",
+            "js": ["script.js"]
+        }]
+}
+
